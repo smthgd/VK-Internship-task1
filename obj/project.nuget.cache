@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "xw4aJMrK+xY=",
+  "dgSpecHash": "XOTCOCVZfYQ=",
   "success": true,
   "projectFilePath": "C:\\Users\\sem06\\source\\repos\\VK-Internship-task1-1\\VK-Internship-task1-1.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\sem06\\.nuget\\packages\\htmlagilitypack\\1.11.61\\htmlagilitypack.1.11.61.nupkg.sha512"
+  ],
   "logs": []
 }

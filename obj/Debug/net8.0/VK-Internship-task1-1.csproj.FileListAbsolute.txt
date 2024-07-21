@@ -13,3 +13,6 @@ C:\Users\sem06\source\repos\VK-Internship-task1-1\obj\Debug\net8.0\refint\VK-Int
 C:\Users\sem06\source\repos\VK-Internship-task1-1\obj\Debug\net8.0\VK-Internship-task1-1.pdb
 C:\Users\sem06\source\repos\VK-Internship-task1-1\obj\Debug\net8.0\VK-Internship-task1-1.genruntimeconfig.cache
 C:\Users\sem06\source\repos\VK-Internship-task1-1\obj\Debug\net8.0\ref\VK-Internship-task1-1.dll
+C:\Users\sem06\source\repos\VK-Internship-task1-1\bin\Debug\net8.0\HtmlAgilityPack.dll
+C:\Users\sem06\source\repos\VK-Internship-task1-1\obj\Debug\net8.0\VK-Internship-task1-1.csproj.AssemblyReference.cache
+C:\Users\sem06\source\repos\VK-Internship-task1-1\obj\Debug\net8.0\VK-Inter.C4FF5167.Up2Date

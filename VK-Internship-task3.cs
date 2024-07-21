@@ -1,7 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Net.Http;
 using HtmlAgilityPack;
 
 namespace SteamTopSellers
@@ -71,7 +69,6 @@ namespace SteamTopSellers
                     }
                 }
 
-                // Создание списка игр
                 List<Game> topSellers = new List<Game>();
 
                 return topSellers;
@@ -79,10 +76,10 @@ namespace SteamTopSellers
         }
     }
 
-    // Класс для хранения данных о игре
     public class Game
     {
         public string Name { get; set; }
+
         public int Price { get; set; }
     }
 }
