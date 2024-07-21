@@ -10,10 +10,22 @@ namespace SteamTopSellers
         {
             try
             {
+                var topSellers = await GetTopSellers();
+
                 Console.WriteLine("Топ-10 игр в Steam (РФ):");
                 Console.WriteLine("-----------------------------");
 
-                var topSellers = await GetTopSellers();
+                for (int i = 0; i < topSellers.Count; i++)
+                {
+                    if (topSellers[i].Price != 0)
+                    {
+                        Console.WriteLine($"Место: {i + 1}. {topSellers[i].Name} - {topSellers[i].Price} руб.");
+                    }
+                    else
+                    {
+                        Console.WriteLine($"Место: {i + 1}. {topSellers[i].Name} - Бесплатно");
+                    }
+                }
             }
             catch (HttpRequestException ex)
             {
@@ -28,6 +40,7 @@ namespace SteamTopSellers
         private static async Task<List<Game>> GetTopSellers()
         {
             string topsellersUrl = "https://store.steampowered.com/search/?filter=topsellers\\RU";
+            List<Game> topSellers = new List<Game>();
 
             using (HttpClient client = new HttpClient())
             {
@@ -56,20 +69,18 @@ namespace SteamTopSellers
 
                         if (finalPrice.Length > 2)
                         {
-                            Console.WriteLine($"Место: {i + 1}. {gameName}. Цена: {finalPrice[1]} руб");
+                            topSellers.Add(new Game { Name = gameName, Price = Convert.ToInt32(finalPrice[1]) });
                         }
                         else
                         {
-                            Console.WriteLine($"Место: {i + 1}. {gameName}. Цена: {finalPrice[0]} руб");
+                            topSellers.Add(new Game { Name = gameName, Price = Convert.ToInt32(finalPrice[0]) });
                         }
                     }
                     else
                     {
-                        Console.WriteLine($"Место: {i + 1}. {gameName}. Цена: Бесплатно");
+                        topSellers.Add(new Game { Name = gameName, Price = 0 });
                     }
                 }
-
-                List<Game> topSellers = new List<Game>();
 
                 return topSellers;
             }

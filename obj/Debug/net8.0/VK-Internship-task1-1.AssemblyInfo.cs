@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("VK-Internship-task1-1")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5f0336f4025a07ab872bf375d5a2ee6a5bcb5883")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5489894c4ad0ef8cd7c8886568644e6198418d26")]
 [assembly: System.Reflection.AssemblyProductAttribute("VK-Internship-task1-1")]
 [assembly: System.Reflection.AssemblyTitleAttribute("VK-Internship-task1-1")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
